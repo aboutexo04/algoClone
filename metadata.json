@@ -1,0 +1,5 @@
+{
+  "name": "AlgoMaster AI",
+  "description": "AI 기반의 알고리즘 및 자료구조 클론코딩 트레이너입니다. 문제를 선택하고 코드를 작성하면 AI가 즉각적인 피드백과 코드 리뷰를 제공합니다.",
+  "requestFramePermissions": []
+}
