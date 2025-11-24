@@ -2,9 +2,9 @@ import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { AlgorithmProblem, CodeReviewResult } from '../types';
 
 const getAiClient = () => {
-  const apiKey = process.env.API_KEY;
+  const apiKey = process.env.API_KEY || import.meta.env.VITE_API_KEY;
   if (!apiKey) {
-    throw new Error("API Key not found");
+    throw new Error("API Key not found. Please set VITE_API_KEY environment variable.");
   }
   return new GoogleGenAI({ apiKey });
 };
